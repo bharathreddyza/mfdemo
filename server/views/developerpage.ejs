@@ -1,0 +1,17 @@
+<%- include('./partials/headers'); -%>
+<div class="container">
+      <div class="col-md-4">
+         <div class="row">
+             <img style="border-radius: 50%;" src="<%= data.profilePic %>" alt="">
+             <div class="col">
+                 <h1><%= data.userName %></h1>
+                 <h2><%= data.email %></h2>
+                 <p><%= data.phone %></p>
+
+             </div>
+         </div> 
+      </div>
+</div>
+
+
+<%- include('./partials/footer') ; -%>

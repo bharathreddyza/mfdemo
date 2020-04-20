@@ -1,0 +1,47 @@
+<%- include('./partials/headers'); -%>
+
+<form action="/index" method="POST" enctype="multipart/form-data">
+
+    <div class="form-group">
+      <label  for="exampleInputEmail1">Email address</label>
+      <input type="email" name="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label  for="password">Password</label>
+      <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+        <label  for="userName">user name</label>
+        <input name="userName" type="text" class="form-control" id="userName" placeholder="user name">
+      </div>
+      <div class="form-group">
+        <label  for="phone">phone</label>
+        <input name="phone" type="number" class="form-control" id="phone" placeholder="Phone">
+      </div>
+
+      <div class="form-group">
+        <label  for="phone">phone</label>
+        <input name="phone" type="number" class="form-control" id="phone" placeholder="89809897">
+      </div>
+
+      <div class="form-group">
+        <label  for="profilePic">profile picture</label>
+        <input name="profilePic" type="file" class="form-control" id="profilePic" required placeholder="upload your profile pic">
+      </div>
+      
+      <div class="form-group">
+        <label  for="decsription">bio</label>
+        <input name="decsription" type="text" class="form-control" id="decsription" required placeholder="i am a developer">
+      </div>
+
+      <div class="form-group">
+        <label  for="portfolio">portfolio images</label>
+        <input name="projects" type="file" class="form-control" id="projects" required placeholder="projects">
+      </div>
+      
+    <button type="submit" class="btn btn-primary">register</button>
+  </form>
+
+    <%- include('./partials/footer') ; -%>
